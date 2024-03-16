@@ -1,6 +1,6 @@
 all:
-	@mkdir -p /home/ozduremre/data/wordpress
-	@mkdir -p /home/ozduremre/data/mariadb
+	@mkdir -p /home/eozdur/data/wordpress
+	@mkdir -p /home/eozdur/data/mariadb
 	@docker-compose -f srcs/docker-compose.yml up --build
 
 start:
@@ -14,6 +14,6 @@ clean:
 
 fclean: clean
 	@docker system prune -af
-	@rm -rf /home/ozduremre/data
+	@rm -rf /home/eozdur/data
 
 .PHONY: all start stop clean fclean re
